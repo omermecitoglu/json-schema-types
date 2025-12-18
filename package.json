@@ -1,0 +1,79 @@
+{
+  "name": "@omer-x/json-schema-types",
+  "version": "0.0.0",
+  "description": "TypeScript types for the JSON Schema Specification",
+  "keywords": [
+    "json-schema",
+    "specification",
+    "types",
+    "typescript",
+    "ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omermecitoglu/json-schema-types.git"
+  },
+  "bugs": {
+    "url": "https://github.com/omermecitoglu/json-schema-types/issues"
+  },
+  "homepage": "https://github.com/omermecitoglu/json-schema-types#readme",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "name": "Omer Mecitoglu",
+    "email": "omer.mecitoglu@gmail.com",
+    "url": "https://omermecitoglu.github.io"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts"
+    },
+    "./array": {
+      "types": "./dist/array.d.ts"
+    },
+    "./boolean": {
+      "types": "./dist/boolean.d.ts"
+    },
+    "./integer": {
+      "types": "./dist/integer.d.ts"
+    },
+    "./null": {
+      "types": "./dist/null.d.ts"
+    },
+    "./number": {
+      "types": "./dist/number.d.ts"
+    },
+    "./object": {
+      "types": "./dist/object.d.ts"
+    },
+    "./string": {
+      "types": "./dist/string.d.ts"
+    },
+    "./unknown": {
+      "types": "./dist/unknown.d.ts"
+    }
+  },
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "prebuild": "ts-unused-exports tsconfig.json --excludePathsFromReport='src/index'",
+    "build": "tsc"
+  },
+  "peerDependencies": {
+    "@omer-x/openapi-types": "^1"
+  },
+  "devDependencies": {
+    "@omer-x/eslint-config": "^2.2.6",
+    "eslint": "^9.39.2",
+    "semantic-release": "^25.0.2",
+    "ts-unused-exports": "^11.0.1",
+    "typescript": "^5.9.3"
+  }
+}
