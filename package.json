@@ -1,6 +1,6 @@
 {
   "name": "@omer-x/json-schema-types",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "TypeScript types for the JSON Schema Specification",
   "keywords": [
     "json-schema",
