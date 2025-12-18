@@ -1,5 +1,5 @@
 import type { SchemaObject } from ".";
-import type { ReferenceObject } from "@omer-x/openapi-types/dist/reference";
+import type { ReferenceObject } from "@omer-x/openapi-types/reference";
 
 export type ObjectSchema = {
   type: "object",

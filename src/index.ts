@@ -6,7 +6,7 @@ import type { NumberSchema } from "./number";
 import type { ObjectSchema } from "./object";
 import type { StringSchema } from "./string";
 import type { UnknownSchema } from "./unknown";
-import type { ReferenceObject } from "@omer-x/openapi-types/dist/reference";
+import type { ReferenceObject } from "@omer-x/openapi-types/reference";
 
 /**
  * The Schema Object allows the definition of input and output data types. These types can be objects, but also primitives and arrays. This object is a superset of the JSON Schema Specification Draft 2020-12.
