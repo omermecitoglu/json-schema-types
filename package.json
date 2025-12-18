@@ -63,6 +63,8 @@
     "dist/"
   ],
   "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
     "prebuild": "ts-unused-exports tsconfig.json --excludePathsFromReport='src/index'",
     "build": "tsc"
   },
@@ -71,9 +73,11 @@
   },
   "devDependencies": {
     "@omer-x/eslint-config": "^2.2.6",
+    "ajv": "^8.17.1",
     "eslint": "^9.39.2",
     "semantic-release": "^25.0.2",
     "ts-unused-exports": "^11.0.1",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.16"
   }
 }
