@@ -1,3 +1,3 @@
 export type UnknownSchema = {
-  type?: undefined,
+  type?: never,
 };
