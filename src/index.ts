@@ -12,6 +12,7 @@ import type { ReferenceObject } from "@omer-x/openapi-types/reference";
  * The Schema Object allows the definition of input and output data types. These types can be objects, but also primitives and arrays. This object is a superset of the JSON Schema Specification Draft 2020-12.
  */
 export type SchemaObject = ({
+  $schema?: "https://json-schema.org/draft/2020-12/schema",
   /**
    * Adds support for polymorphism. The discriminator is an object name that is used to differentiate between other schemas which may satisfy the payload description. See Composition and Inheritance for more details.
    */
