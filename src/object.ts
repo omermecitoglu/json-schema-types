@@ -12,6 +12,7 @@ export type ObjectSchema = {
    */
   required?: string[],
   additionalProperties?: SchemaObject | ReferenceObject | boolean,
+  propertyNames?: SchemaObject & { type: "string" },
   minProperties?: number,
   maxProperties?: number,
 };
