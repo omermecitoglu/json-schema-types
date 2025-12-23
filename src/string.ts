@@ -5,6 +5,7 @@ export type StringSchema = {
   contentEncoding?: "base16" | "base32" | "base64" | "base64url",
   pattern?: string,
   default?: string,
+  const?: string,
   enum?: string[],
   minLength?: number,
   maxLength?: number,
