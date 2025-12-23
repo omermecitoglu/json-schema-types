@@ -43,6 +43,6 @@ export type SchemaObject = ({
   NullSchema |
   BooleanSchema |
   UnknownSchema
-)) | (ReferenceObject & {
+)) | (ReferenceObject & UnknownSchema & {
   $schema?: never,
 });
