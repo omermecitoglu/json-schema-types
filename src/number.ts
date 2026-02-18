@@ -1,6 +1,7 @@
 export type NumberSchema = {
   type: "number",
   format?: "float" | "double",
+  const?: number,
   minimum?: number,
   exclusiveMinimum?: number,
   maximum?: number,
