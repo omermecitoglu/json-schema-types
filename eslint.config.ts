@@ -4,7 +4,10 @@ export default [
   ...omer,
   {
     rules: {
-      "@stylistic/max-len": "off"
+      "@stylistic/max-len": "off",
     },
+  },
+  {
+    ignores: ["dist/*"],
   },
 ];
