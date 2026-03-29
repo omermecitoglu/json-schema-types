@@ -67,7 +67,7 @@
     "lint:fix": "eslint --fix --flag unstable_native_nodejs_ts_config",
     "test": "vitest run",
     "test:watch": "vitest",
-    "build": "tsc"
+    "build": "tsup --dts-only"
   },
   "peerDependencies": {
     "@omer-x/openapi-types": "^1"
