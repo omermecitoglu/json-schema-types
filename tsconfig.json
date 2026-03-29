@@ -1,13 +1,16 @@
 {
   "compilerOptions": {
-    "declaration": true,
-    "emitDeclarationOnly": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
+    "strict": true, // default in ts6, can be removed after upgrade
+    "module": "esnext", // default in ts6, can be removed after upgrade
+    "moduleResolution": "bundler", // default in ts6, can be removed after upgrade
+    "target": "esnext", // default in ts6, can be removed after upgrade
+    "noUncheckedSideEffectImports": true, // default in ts6, can be removed after upgrade
+    "libReplacement": false, // default in ts6, can be removed after upgrade
+    "types": [],
     "lib": ["ESNext"],
-    "outDir": "./dist",
-    "strict": true
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "src/**/*.test.ts"]
+  "include": [
+    "**/*.ts",
+  ],
+  "exclude": ["node_modules", "dist"]
 }
